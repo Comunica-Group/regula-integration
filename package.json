@@ -1,0 +1,54 @@
+{
+  "name": "regula_prueba",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^8.56.0",
+    "react-scripts": "^5.0.1",
+    "standard": "^17.1.0",
+    "standard-version": "^9.5.0"
+  },
+  "dependencies": {
+    "@regulaforensics/document-reader-webclient": "^6.9.6",
+    "body-parser": "^1.17.1",
+    "config": "^1.25.1",
+    "cors": "^2.8.3",
+    "debug": "^2.6.3",
+    "dotenv": "^16.4.1",
+    "express": "^4.15.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^5.0.4",
+    "react-router": "^4.1.1",
+    "react-router-redux": "next",
+    "redux": "^3.6.0",
+    "redux-saga": "^0.15.1"
+  },
+  "scripts": {
+    "release": "standard-version",
+    "start": "react-scripts start",
+    "start-server": "bin/server.sh",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
