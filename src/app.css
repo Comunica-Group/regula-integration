@@ -3,22 +3,100 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
   height: 80px;
+  margin-right: 20px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 75px;
+  background-color: #364e73;
+  height: 100px;
   padding: 20px;
   color: white;
+  display: flex;
+  align-items: center;
 }
+
+.App-header h1 {
+  text-align: center;
+  
+  margin-left: 350px; 
+}
+
 
 .App-intro {
   font-size: large;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.document-info-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
 }
+
+.document-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.document-info > div {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+.document-info > div:last-child {
+  border-bottom: none;
+}
+
+.document-info h5 {
+  margin-bottom: 5px;
+}
+
+.document-info p {
+  margin-top: 5px;
+}
+
+.Footer {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(34, 34, 34, 0);
+  color: white;
+  padding: 1px;
+  text-align: right;
+}
+
+.Footer-logo {
+  height: 60px;
+  margin-right: 20px;
+}
+
+.document-info-container {
+  max-width: 600px;
+  padding: 20px; 
+  border-radius: 0px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin: 0 auto; 
+  text-align: center; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+}
+
+
+.document-info {
+  /* Add some margin between child elements */
+  margin-top: 10px;
+}
+
+.document-info h5 {
+  margin-bottom: 5px; /* Add some space below the heading */
+}
+
+.document-info img {
+  max-width: 100%; /* Ensure images don't exceed container width */
+}
+
+
