@@ -17,6 +17,8 @@
   },
   "dependencies": {
     "@regulaforensics/document-reader-webclient": "^6.9.6",
+    "@regulaforensics/facesdk-webclient": "^5.2.8",
+    "@regulaforensics/vp-frontend-face-components": "^3.0.1",
     "body-parser": "^1.17.1",
     "config": "^1.25.1",
     "cors": "^2.8.3",
@@ -50,5 +52,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
