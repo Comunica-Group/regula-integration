@@ -1,3 +1,4 @@
+//cambios y pruebas
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { initialize } from './actions';
