@@ -6,7 +6,6 @@
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
     "@babel/node": "^7.0.0",
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.0.0",
@@ -19,10 +18,6 @@
   "dependencies": {
     "@regulaforensics/document-reader-webclient": "^6.9.6",
     "@regulaforensics/facesdk-webclient": "^5.2.8",
-<<<<<<< HEAD
-=======
-    "@regulaforensics/vp-frontend-document-components": "^2.5.1",
->>>>>>> origin/dev
     "@regulaforensics/vp-frontend-face-components": "^3.0.1",
     "body-parser": "^1.17.1",
     "config": "^1.25.1",
@@ -35,7 +30,7 @@
     "react-redux": "^5.0.4",
     "react-router": "^4.1.1",
     "react-router-redux": "next",
-    "redux": "^5.0.0",
+    "redux": "^3.6.0",
     "redux-saga": "^0.15.1"
   },
   "scripts": {
