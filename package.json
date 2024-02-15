@@ -19,6 +19,7 @@
   "dependencies": {
     "@regulaforensics/document-reader-webclient": "^6.9.6",
     "@regulaforensics/facesdk-webclient": "^5.2.8",
+    "@regulaforensics/vp-frontend-document-components": "^2.5.1",
     "@regulaforensics/vp-frontend-face-components": "^3.0.1",
     "body-parser": "^1.17.1",
     "config": "^1.25.1",
@@ -31,7 +32,7 @@
     "react-redux": "^5.0.4",
     "react-router": "^4.1.1",
     "react-router-redux": "next",
-    "redux": "^3.6.0",
+    "redux": "^5.0.0",
     "redux-saga": "^0.15.1"
   },
   "scripts": {
