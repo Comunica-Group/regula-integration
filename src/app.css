@@ -60,12 +60,13 @@
 .Footer {
   position: fixed;
   bottom: 20px;
-  left: 0;
-  width: 100%;
+  left: 1080px;
+  width: 25%;
   background-color: rgba(34, 34, 34, 0);
   color: white;
   padding: 1px;
   text-align: right;
+  float: right;
 }
 
 .Footer-logo {
@@ -97,6 +98,43 @@
 
 .document-info img {
   max-width: 100%; /* Ensure images don't exceed container width */
+}
+
+.block {
+  display: block;
+  width: 50%;
+  border: none;
+  background-color: #6b6e8f;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  float: left;
+  border-radius: 0 0 10px 10px;
+}
+
+.block2 {
+  display: block;
+  width: 50%;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  float: right;
+  border-radius: 0 0 10px 10px;
+}
+
+.facel {
+  align-self: left;
+}
+
+.active-tab {
+  background-color: #404478;
+}
+
+.inactive-tab {
+  background-color: #6b6e8f;
 }
 
 
