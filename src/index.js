@@ -5,7 +5,11 @@ import createHistory from 'history/createBrowserHistory'
 import { ConnectedRouter } from 'react-router-redux'
 import configureStore from './store'
 import routes from './routes'
+<<<<<<< HEAD
 import './node_modules/main.js';
+=======
+//import './node_modules/main.js';
+>>>>>>> origin/dev
 
 const history = createHistory()
 const store = configureStore(history)

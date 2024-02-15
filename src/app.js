@@ -27,9 +27,14 @@ class App extends Component {
       docNumberMrzVisualMatching: null,
       documentImageBase64: null,
       portraitImageBase64: null,
+<<<<<<< HEAD
       activeTab: 'DocumentReader' // Default active tab
     };
     // Bind the listener function
+=======
+      activeTab: 'DocumentReader'
+    };
+>>>>>>> origin/dev
     this.listener = this.listener.bind(this);
   }
 
@@ -41,7 +46,10 @@ class App extends Component {
 
     const component = document.querySelector('document-reader');
 
+<<<<<<< HEAD
     // Use the bound function
+=======
+>>>>>>> origin/dev
     component.addEventListener('document-reader', this.listener);
 
     window.RegulaDocumentSDK.recognizerProcessParam = {
@@ -86,7 +94,10 @@ class App extends Component {
         processParam: {
           scenario: Scenario.FULL_AUTH,
           resultTypeOutput: [
+<<<<<<< HEAD
             // actual results
+=======
+>>>>>>> origin/dev
             Result.STATUS,
             Result.AUTHENTICITY,
             Result.TEXT,
@@ -94,7 +105,10 @@ class App extends Component {
             Result.DOCUMENT_TYPE,
             Result.DOCUMENT_TYPE_CANDIDATES,
             Result.IMAGE_QUALITY,
+<<<<<<< HEAD
             // legacy results
+=======
+>>>>>>> origin/dev
             Result.MRZ_TEXT,
             Result.VISUAL_TEXT,
             Result.BARCODE_TEXT,
@@ -145,7 +159,10 @@ class App extends Component {
         portraitImageBase64: valueportrait_base64
       });
     } else {
+<<<<<<< HEAD
       // Reset state when a new request is triggered
+=======
+>>>>>>> origin/dev
       this.setState({
         docOverallStatus: null,
         docNumberVisual: null,
@@ -235,12 +252,24 @@ class App extends Component {
 
   renderFaceSDKTab = () => {
     return (
+<<<<<<< HEAD
     <div>
     <face-capture></face-capture>
     <script type="module" src="index.js"></script>
     </div>
     );
   };
+=======
+      <div>
+        <h1 style={{ marginBottom: "20px" }}>Face Liveness Detector</h1>
+        <face-liveness></face-liveness>
+        <script type="module" src="index.js"></script>
+      </div>
+    );
+  };
+  
+  
+>>>>>>> origin/dev
 
   render() {
     return (
@@ -250,8 +279,23 @@ class App extends Component {
           <h1>ID Verification Demo</h1>
         </div>
         <div className="Tabs">
+<<<<<<< HEAD
           <button onClick={() => this.setState({ activeTab: 'DocumentReader' })}>Document Reader</button>
           <button onClick={() => this.setState({ activeTab: 'FaceSDK' })}>Face SDK</button>
+=======
+          <button
+            className={`block ${this.state.activeTab === 'DocumentReader' ? 'active-tab' : ''}`}
+            onClick={() => this.setState({ activeTab: 'DocumentReader' })}
+          >
+            Document Reader
+          </button>
+          <button
+          className={`block2 ${this.state.activeTab === 'FaceSDK' ? 'active-tab' : 'inactive-tab'}`}
+          onClick={() => this.setState({ activeTab: 'FaceSDK' })}
+          >
+          Face SDK
+          </button>
+>>>>>>> origin/dev
         </div>
         {this.state.activeTab === 'DocumentReader' && this.renderDocumentReaderTab()}
         {this.state.activeTab === 'FaceSDK' && this.renderFaceSDKTab()}
@@ -260,7 +304,7 @@ class App extends Component {
         </footer>
       </div>
     );
-  }
+  }  
 }
 
 
