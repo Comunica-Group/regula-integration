@@ -5,6 +5,8 @@ import comunica from './Comunica.png';
 import './app.css';
 import { defineComponents, DocumentReaderService } from '@regulaforensics/vp-frontend-document-components';
 import { DocumentReaderApi, Result, Scenario, Source, TextFieldType, GraphicFieldType, Light, SecurityFeatureType } from '@regulaforensics/document-reader-webclient';
+import { FaceSdk, ImageSource }from '@regulaforensics/facesdk-webclient';
+import FaceComparison from './FaceComparison';
 
 const { PORTRAIT, DOCUMENT_FRONT } = GraphicFieldType;
 const { DOCUMENT_NUMBER, GIVEN_NAMES, SURNAME } = TextFieldType;
@@ -34,7 +36,6 @@ class App extends Component {
 
   componentDidMount() {
     this.props.initialize();
-    console.log("SI JALA");
     window.RegulaDocumentSDK = new DocumentReaderService();
     defineComponents().then(() => window.RegulaDocumentSDK.initialize({ license: regula_license }));
 
@@ -163,6 +164,13 @@ class App extends Component {
     }
   }
 
+  renderFaceComparisonTab = () => {
+    return (
+      <FaceComparison portraitImageBase64={this.state.portraitImageBase64} /> // Passing portraitImageBase64 as a prop
+    );
+  };
+  
+
 
   renderDocumentReaderTab = () => {
     return (
@@ -222,6 +230,12 @@ class App extends Component {
                 </div>
               )}
             </div>
+            <button
+              className={`block3`}
+              onClick={() => this.setState({ activeTab: 'FaceComparison' })}
+            >
+              Compare Faces
+            </button>
           </div>
         )}
       </div>
@@ -237,7 +251,8 @@ class App extends Component {
       </div>
     );
   };
-  
+
+
   
 
   render() {
@@ -263,6 +278,7 @@ class App extends Component {
         </div>
         {this.state.activeTab === 'DocumentReader' && this.renderDocumentReaderTab()}
         {this.state.activeTab === 'FaceSDK' && this.renderFaceSDKTab()}
+        {this.state.activeTab === 'FaceComparison' && this.renderFaceComparisonTab()}
         <footer className="Footer">
           <img className="Footer-logo" src={comunica} alt="Logo" />
         </footer>

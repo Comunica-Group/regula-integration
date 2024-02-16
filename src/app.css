@@ -137,4 +137,82 @@
   background-color: #6b6e8f;
 }
 
+.block3 {
+  background-color: green;
+  display: block;
+  width: 50%;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  color: black;
+  float: right;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 5px;
+  width: 60%;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.image-container {
+  text-align: center;
+  width: 50%;
+}
+
+.image {
+  width: 150px; 
+  height: auto; 
+}
+
+h3 {
+  margin-bottom: 5px;
+}
+
+.images-wrapper {
+  display: flex;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column; /* Ensure vertical layout */
+  /* Other styles */
+}
+
+.images-wrapper {
+  display: flex;
+}
+
+.image-container {
+  width: 50%;
+}
+
+
+
+
 
