@@ -6,7 +6,7 @@ const FaceComparison = ({ portraitImageBase64 }) => {
   const faceCaptureRef = useRef(null);
   const [comparisonResults, setComparisonResults] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selfie, setSelfie] = useState(null); // Declare selfie state
+  const [selfie, setSelfie] = useState(null);
 
   useEffect(() => {
     const listener = async (event) => {

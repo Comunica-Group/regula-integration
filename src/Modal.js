@@ -19,7 +19,7 @@ const Modal = ({ isOpen, handleClose, results, selfie, portraitImageBase64 }) =>
             </div>
             <div className="image-container">
               <h3>Selfie</h3>
-              <img className="image" src={`data:image/png;base64,${selfie}`} alt="Selfie" />
+              <img className="image2" src={`data:image/png;base64,${selfie}`} alt="Selfie" />
             </div>
           </div>
           <div>
@@ -29,7 +29,7 @@ const Modal = ({ isOpen, handleClose, results, selfie, portraitImageBase64 }) =>
               </p>
             ))}
           </div>
-          <button onClick={handleReloadPage}>Close and Reload</button>
+          <button onClick={handleReloadPage} className='container-button'>Close and Reload</button>
         </div>
       </div>
     )

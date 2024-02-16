@@ -88,16 +88,15 @@
 
 
 .document-info {
-  /* Add some margin between child elements */
   margin-top: 10px;
 }
 
 .document-info h5 {
-  margin-bottom: 5px; /* Add some space below the heading */
+  margin-bottom: 5px;
 }
 
 .document-info img {
-  max-width: 100%; /* Ensure images don't exceed container width */
+  max-width: 100%; 
 }
 
 .block {
@@ -200,8 +199,7 @@ h3 {
 
 .modal-content {
   display: flex;
-  flex-direction: column; /* Ensure vertical layout */
-  /* Other styles */
+  flex-direction: column; 
 }
 
 .images-wrapper {
@@ -211,6 +209,27 @@ h3 {
 .image-container {
   width: 50%;
 }
+
+.image2 {
+  width: 300px; 
+  height: auto; 
+}
+
+.container-button {
+  background-color: #eca10b;
+  display: block;
+  width: 30%;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  color: black;
+  border-radius: 10px;
+  margin-left: auto; 
+  margin-right: auto;
+}
+
 
 
 
