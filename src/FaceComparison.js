@@ -48,10 +48,8 @@ const FaceComparison = ({ portraitImageBase64 }) => {
 
   return (
     <div>
-      <h2>Face Comparison</h2>
       {portraitImageBase64 && (
         <div>
-          <h3>Portrait Image</h3>
           <face-capture ref={faceCaptureRef}></face-capture>
           <script type="module" src="index.js"></script>
         </div>

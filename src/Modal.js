@@ -3,7 +3,18 @@ import './app.css';
 
 const Modal = ({ isOpen, handleClose, results, selfie, portraitImageBase64 }) => {
   const handleReloadPage = () => {
-    window.location.reload(); // Reload the page
+    window.location.reload();
+  };
+
+  const getColor = similarity => {
+    const percentage = similarity * 100;
+    if (percentage > 90) {
+      return 'green';
+    } else if (percentage > 70) {
+      return 'yellow';
+    } else {
+      return 'red';
+    }
   };
 
   return (
@@ -23,11 +34,15 @@ const Modal = ({ isOpen, handleClose, results, selfie, portraitImageBase64 }) =>
             </div>
           </div>
           <div>
-            {results.map(result => (
-              <p key={`${result.firstIndex}-${result.secondIndex}`}>
-                Pair ({result.firstIndex}, {result.secondIndex}) - Similarity: {result.similarity}
+            {results.length > 0 && (
+              <p style={{ 
+                color: getColor(results[results.length - 1].similarity),
+                fontSize: '20px', 
+                fontWeight: 'bold'
+              }}>
+                {Math.round(results[results.length - 1].similarity * 100)}% of Similarity
               </p>
-            ))}
+            )}
           </div>
           <button onClick={handleReloadPage} className='container-button'>Close and Reload</button>
         </div>
