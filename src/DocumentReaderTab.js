@@ -59,7 +59,6 @@ class DocumentReaderTab extends Component {
   }
 
   async listener(event) {
-    console.log(event);
     if (event.detail.action === 'PROCESS_FINISHED' && event.detail.data.status === 1) {
       const response = event.detail.data.response;
       console.log('Response:', response);

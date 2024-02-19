@@ -36,6 +36,8 @@
   },
   "scripts": {
     "release": "standard-version",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
     "start": "react-scripts start",
     "start-server": "bin/server.sh",
     "build": "react-scripts build",

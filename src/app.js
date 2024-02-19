@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { initialize } from './actions';
-import comunica from './Comunica.png';
+import logo_igss from './logo_igss.png';
 import './app.css';
 import PasswordComponent from './PasswordComponent';
 import DocumentReaderTab from './DocumentReaderTab';
@@ -86,13 +86,13 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img className="App-logo" src={comunica} alt="Logo" />
-          <h1>ID Verification Demo</h1>
+          <img className="App-logo" src={logo_igss} alt="Logo" />
+          <h1>Demo Verificación Documentos</h1>
         </div>
         {this.renderPasswordProtection()}
         {this.renderMainContent()}
         <footer className="Footer">
-          <img className="Footer-logo" src={comunica} alt="Logo" />
+          <img className="Footer-logo" src={logo_igss} alt="Logo" />
         </footer>
       </div>
     );
