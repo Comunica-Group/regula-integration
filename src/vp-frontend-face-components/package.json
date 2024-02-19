@@ -1,0 +1,22 @@
+{
+  "name": "@regulaforensics/vp-frontend-face-components",
+  "version": "3.0.1",
+  "description": "Regula framework agnostic web components to work with webcamera",
+  "types": "lib/index.d.ts",
+  "main": "dist/main.js",
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "author": "Regula Forensics, Inc.",
+  "license": "MIT",
+  "homepage": "https://storybook-face.regulaforensics.com/",
+  "scripts": {
+    "build": "webpack --config webpack-umd.js",
+    "test": "jest --testPathPattern=src/tests"
+  },
+  "dependencies": {
+    "@regulaforensics/facesdk-webclient": "^3.1.2",
+    "zustand": "^4.3.7"
+  }
+}
