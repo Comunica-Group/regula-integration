@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4dfe7fc7.css",
+    "main.js": "/static/js/main.47756576.js",
+    "static/media/logo_igss.png": "/static/media/logo_igss.97eb41baece1f81bc7f3.png",
+    "index.html": "/index.html",
+    "main.4dfe7fc7.css.map": "/static/css/main.4dfe7fc7.css.map",
+    "main.47756576.js.map": "/static/js/main.47756576.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4dfe7fc7.css",
+    "static/js/main.47756576.js"
+  ]
+}

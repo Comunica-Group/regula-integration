@@ -5,7 +5,7 @@ import createHistory from 'history/createBrowserHistory'
 import { ConnectedRouter } from 'react-router-redux'
 import configureStore from './store'
 import routes from './routes'
-import './node_modules/main.js';
+import './vp-frontend-face-components/dist/main.js';
 
 const history = createHistory()
 const store = configureStore(history)
